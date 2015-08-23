@@ -1,0 +1,1 @@
+../2_intro_bash/stdout_stderr.sh

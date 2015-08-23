@@ -1,0 +1,18 @@
+Script, resources and example code needed for the course 
+     "Advanced bash scripting"
+taking place at the Ruprecht-Karls-Universität Heidelberg
+from 24th – 28th August 2015.
+
+bash_course.pdf      The main script
+LICENCE              Overview how files in this repository
+                     are licenced
+resources/           Data neccessary to run the examples
+                     and do the exercises.
+
+
+You should run the script resources/gutenberg/download.sh
+before you can do the Project Gutenberg-related exercises.
+
+Run the script in the resources/gutenberg/ directory, i.e.
+	cd resources/gutenberg/
+	./download.sh
