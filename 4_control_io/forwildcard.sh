@@ -9,7 +9,7 @@ for i in ../matrices/?a.mtx; do
 	echo $i
 done
 
-#NOTE: Unmatched strings still contain * or ?
+#NOTE: Non-matching strings still contain * or ?
 for i in /non?exist*ant; do
 	echo $i
 done

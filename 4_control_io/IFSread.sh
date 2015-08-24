@@ -4,7 +4,8 @@ ARG="foo"
 VAL="bar"
 COMMENT="Some crazy comment"
 
-# here we run code to determine the values of ARG, VAL, COMMENT
+# here we run code to determine the values of 
+# ARG, VAL, COMMENT
 
 # store it for later usage in a more compact form
 STORAGE="$ARG+$VAL+$COMMENT"

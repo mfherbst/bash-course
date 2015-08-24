@@ -11,9 +11,9 @@ for number in $VAR; do
 done
 echo
 
-# it is good practice to change IFS back to the original
-# after you used the trick, otherwise all sorts of crazy
-# erros can occurr
+# it is good practice to change IFS back to the
+# original after you used the trick, otherwise 
+# all sorts of crazy errors can occur
 IFS=$OIFS
 
 echo second loop
