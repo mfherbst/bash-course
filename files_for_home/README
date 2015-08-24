@@ -1,0 +1,4 @@
+These files are recommended settings for the course.
+You should copy them to your home directory using
+
+cp -a .bashrc ~
