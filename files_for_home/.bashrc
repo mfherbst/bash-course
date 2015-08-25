@@ -46,3 +46,7 @@ alias ..='cd ..'
 if [ -f /etc/bash_completion ]; then
 	. /etc/bash_completion
 fi
+
+if [ -f "$HOME/return_code_prompt" ]; then
+	. "$HOME/return_code_prompt"
+fi

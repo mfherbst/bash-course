@@ -1,0 +1,12 @@
+# If bash promt the return code if non-zero
+promt_extra() {
+	local RET=$?
+	local PRINT=""
+	if [ "$RET" != "0" ]; then
+		PRINT="$PRINT,  rc: \033[0;32m$RET\033[0;00m"
+	fi
+	if [ "$PRINT" ];then
+		echo -e "$PRINT" | sed "s/^,  //g"
+	fi
+}
+export PROMPT_COMMAND='promt_extra'

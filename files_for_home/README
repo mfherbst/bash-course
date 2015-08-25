@@ -1,4 +1,10 @@
 These files are recommended settings for the course.
 You should copy them to your home directory using
 
-cp -a .bashrc ~
+cp .bashrc ~
+
+-------------------------------------------------------
+
+If you want return codes to show up in your terminal, 
+also copy the file 
+	cp return_code_prompt ~
