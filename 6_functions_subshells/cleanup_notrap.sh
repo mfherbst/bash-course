@@ -1,5 +1,5 @@
 #!/bin/bash
-TMP=$(mktemp)  # create temporary variable
+TMP=$(mktemp)  # create temporary file
 
 # add some stuff to it
 echo "data" >> "$TMP"

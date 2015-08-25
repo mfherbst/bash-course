@@ -1,5 +1,5 @@
 #!/bin/bash
-TMP=$(mktemp)  # create temporary variable
+TMP=$(mktemp)  # create temporary file
 
 # define the cleanup routine
 cleanup() {

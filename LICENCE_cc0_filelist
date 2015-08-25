@@ -1,5 +1,6 @@
 2_intro_bash/stdout_stderr.sh
 3_simple_scripts/special_parameters.sh
+3_simple_scripts/cat.sh
 3_simple_scripts/first_script.sh
 3_simple_scripts/quoting_example.sh
 4_control_io/forparameter.sh
@@ -55,6 +56,7 @@
 6_functions_subshells/cleanup_trap.sh
 6_functions_subshells/cleanup_notrap.sh
 6_functions_subshells/overwrite_fail.sh
+6_functions_subshells/map.lib.sh
 7_regular_expressions/sed_insertion.sh
 7_regular_expressions/sed_altmatch.sh
 7_regular_expressions/sed_substitute.sh
