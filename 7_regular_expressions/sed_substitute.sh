@@ -9,7 +9,7 @@ generator() {
 
 generator | sed 's/in/blablabla/'
 echo "-----"
-generator | sed 's/\(^.\)i.*\([1-3]\)/2:\2 1:\1 full: &/'
+generator | sed 's/i.*[1-3]/...&.../'
 echo "-----"
 
 # a very common sequence to normalise input

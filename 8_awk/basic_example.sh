@@ -1,5 +1,8 @@
 #!/bin/bash
-echo "awk input" | awk '
+{
+	echo "awk input"
+	echo "line 2"
+} | awk '
 	# missing condition => always done
 	{ print "Hi user. This is what you gave me:" }
 

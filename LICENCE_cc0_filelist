@@ -57,10 +57,20 @@
 6_functions_subshells/cleanup_notrap.sh
 6_functions_subshells/overwrite_fail.sh
 6_functions_subshells/map.lib.sh
+7_regular_expressions/grep_only_matching.sh
 7_regular_expressions/sed_insertion.sh
+7_regular_expressions/regex_alternation.sh
 7_regular_expressions/sed_altmatch.sh
+7_regular_expressions/regex_anchor.sh
 7_regular_expressions/sed_substitute.sh
 7_regular_expressions/sed_delete.sh
+7_regular_expressions/regex_grouping.sh
+7_regular_expressions/regex_plus.sh
+7_regular_expressions/regex_star.sh
+7_regular_expressions/regex_compbracket.sh
+7_regular_expressions/regex_anchorend.sh
+7_regular_expressions/regex_bracket.sh
+7_regular_expressions/regex_posixclass.sh
 7_regular_expressions/grep_vs_egrep.sh
 8_awk/vars_fpaware.sh
 8_awk/vars_arithlogic.sh
@@ -70,6 +80,7 @@
 8_awk/cond_assign_error.sh
 8_awk/ex_grep.sh
 8_awk/vars_stringconcat.sh
+8_awk/action_printf.sh
 8_awk/vars_from_shell.sh
 8_awk/vars_fields.sh
 8_awk/cond_regex_record.sh
@@ -83,6 +94,7 @@
 8_awk/cond_begin_end.sh
 8_awk/cond_combination.sh
 8_awk/cond_regex_var.sh
+resources/digitfile
 resources/directories/5/2/file
 resources/directories/5/1/file
 resources/directories/5/4/file
