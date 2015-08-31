@@ -1,10 +1,6 @@
 These files are recommended settings for the course.
-You should copy them to your home directory using
+You should copy them to your home directory by running
+	./install.sh
 
-cp .bashrc ~
-
--------------------------------------------------------
-
-If you want return codes to show up in your terminal, 
-also copy the file 
-	cp return_code_prompt ~
+in case you created a .bashrc or .profile file, they
+will be moved to .bashrc.old and .profile.old
