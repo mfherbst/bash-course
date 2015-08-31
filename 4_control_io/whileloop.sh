@@ -17,3 +17,10 @@ while [ $N -gt 2 ]; do
 		((M++))
 	done
 done
+
+# more generally the statement 
+#    ((I++))
+# increases the value of the variable I
+# by one. Analoguously
+#    ((I--))
+# decreases it by one.

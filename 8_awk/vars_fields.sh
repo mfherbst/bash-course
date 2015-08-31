@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "some 7 words for awk to process" | awk '
+echo -e "some 7 words\tfor awk to process" | awk '
 	{
 		print "arithmetic: " 2*$2
 		print $4 " " $1

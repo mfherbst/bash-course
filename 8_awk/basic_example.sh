@@ -1,7 +1,6 @@
 #!/bin/bash
 {
 	echo "awk input"
-	echo "line 2"
 } | awk '
 	# missing condition => always done
 	{ print "Hi user. This is what you gave me:" }
@@ -10,6 +9,6 @@
 	# => default print action
 	1 == 1
 
-	# another message:
+	# another message which is always printed
 	{ print "Thank you" }
 '

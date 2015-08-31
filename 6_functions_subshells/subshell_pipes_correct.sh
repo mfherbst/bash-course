@@ -1,9 +1,9 @@
 #!/bin/bash
-COUNT=$(find -type f | {
+COUNT=$(< resources/testfile grep "e" | {
 	C=0
 	while read line; do
 		((C++))
 	done
 	echo $C
 })
-echo "We found $COUNT files"
+echo "We found $COUNT matches for \"e\"."

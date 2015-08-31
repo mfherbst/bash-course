@@ -7,6 +7,7 @@ testfct() {
 	echo $test2  #write to stout
 }
 
+ 
 {
 	echo line1
 	echo line 2

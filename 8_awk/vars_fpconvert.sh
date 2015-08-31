@@ -8,5 +8,5 @@ echo | awk '{
 	res1 = floatvar+floatstring
 	res2 = floatvar + stringvar
 
-	print res1, res2
+	print res1 " " res2
 }'

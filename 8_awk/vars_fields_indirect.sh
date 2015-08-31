@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "some words for awk to process" | awk '
+echo -e "some words for\tawk to process" | awk '
 	{
 		v=5
 		print $v

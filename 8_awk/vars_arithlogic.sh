@@ -14,8 +14,11 @@ echo | awk '{
 	# exponentiation is ^
 	print v "^" u "=" v^u
 
-	print v "==" u ": " v==u
-	print v "!=" u ": " v!=u
-	print v "!=" u "||" v "==" u ": " v!=u||v==u
-	print v "!=" u "&&" v "==" u ": " v!=u&&v==u
+	# need to enforce that comparison operatiors are 
+	# executed before concatenation of the resulting
+	# strings. Not quite sure why.
+	print v "==" u ": " (v==u)
+	print v "!=" u ": " (v!=u)
+	print v "!=" u "||" v "==" u ": " (v!=u||v==u)
+	print v "!=" u "&&" v "==" u ": " (v!=u&&v==u)
 }'
