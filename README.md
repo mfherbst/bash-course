@@ -29,9 +29,9 @@ Note that this will replace your current ``.bashrc`` and your
 current ``.profile`` in case these files exist.
 
 ## Course page
-
-[//]: # The **solutions** to the exercises as well as
-
 Some further information about the course
 can be found on the
 [course website](https://michael-herbst.com/teaching/advanced-bash-scripting-2017/).
+
+The **solutions** to the exercises will also be published on the course website
+during the course.
