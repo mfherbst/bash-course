@@ -1,16 +1,18 @@
-# Advanced bash scripting 2015
+# Advanced bash scripting 2017
 Script, resources and example code for the course **Advanced bash scripting**
 taking place at the Ruprecht-Karls-Universität Heidelberg
-from 24th – 28th August 2015.
+from 6th – 10th November 2017.
 
 Included files:
 - [bash_course.pdf](bash_course.pdf): The main script
+	(currently still the old version of the same course taught in 2015)
 - [LICENCE](LICENCE): Overview how files in this repository are licenced
-- [resources/](resources/): Data neccessary to run the examples and do the exercises.
+- [resources/](resources/): Data neccessary to run the examples and work on the exercises.
 
 ## Setup
 Before being able to do the Project Gutenberg-related exercises, you should
-run the script ``resources/gutenberg/download.sh`` from the ``resources/gutenberg`` directory, i.e.
+run the script ``resources/gutenberg/download.sh`` from the ``resources/gutenberg``
+directory, i.e.
 ```
 cd resources/gutenberg
 ./download.sh
@@ -27,5 +29,9 @@ Note that this will replace your current ``.bashrc`` and your
 current ``.profile`` in case these files exist.
 
 ## Course page
-The **solutions** to the exercises as well as some further information about the course
-can be found on the [course website](http://blog.mfhs.eu/teaching/advanced-bash-scripting-2015/).
+
+[//]: # The **solutions** to the exercises as well as
+
+Some further information about the course
+can be found on the
+[course website](https://michael-herbst.com/teaching/advanced-bash-scripting-2017/).
