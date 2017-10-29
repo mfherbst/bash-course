@@ -35,3 +35,8 @@ can be found on the
 
 The **solutions** to the exercises will also be published on the course website
 during the course.
+
+## Citing
+If you use any of the script examples or the course notes,
+please cite my work:
+[![DOI](https://zenodo.org/badge/40785690.svg)](https://zenodo.org/badge/latestdoi/40785690)
