@@ -5,7 +5,6 @@ from 6th – 10th November 2017.
 
 Included files:
 - [bash_course.pdf](bash_course.pdf): The main script
-	(currently still the old version of the same course taught in 2015)
 - [LICENCE](LICENCE): Overview how files in this repository are licenced
 - [resources/](resources/): Data neccessary to run the examples and work on the exercises.
 
@@ -34,7 +33,7 @@ can be found on the
 [course website](https://michael-herbst.com/teaching/advanced-bash-scripting-2017/).
 
 The **solutions** to the exercises will also be published on the course website
-during the course.
+during or after the course.
 
 ## Citing
 If you use any of the script examples or the course notes,
