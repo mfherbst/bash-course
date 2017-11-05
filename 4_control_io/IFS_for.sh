@@ -1,23 +1,17 @@
 #!/bin/bash
+# Store the original field separator
+# and change to + for the next for loop
 OIFS=$IFS
 IFS="+"
-VAR="4+5+6+7"
-
-# before the for loop runs the value after the "in"
-# is subject to word splitting
-echo first loop
-for number in $VAR; do
+for number in 4+5+6+7; do
 	echo $number
 done
-echo
 
 # it is good practice to change IFS back to the
-# original after you used the trick, otherwise 
-# all sorts of crazy errors can occur
+# original after you used the trick, otherwise
+# all sorts of crazy errors can occur at a later
+# point during the script
 IFS=$OIFS
-
-echo second loop
-for i in 1 2 3 4; do
-	# this works now as intuitively expected:
-	echo $i
+for val in 1 2 3; do
+	echo $val;
 done

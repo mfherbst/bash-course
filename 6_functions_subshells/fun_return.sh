@@ -1,23 +1,22 @@
 #!/bin/bash
 
-return_test() {
-	if [ "$1" == "a" ]; then
-		echo "No thanks"
+comment_on_letter() {
+	if [ "$1" != "a" ]; then
+		echo "Gwk ... I only like a, not $1"
 		return 1
 	fi
-
-	echo "Thank you"
+	echo "Ah ... a is my favorite letter"
 }
 
-other_test() {
+is_letter_b() {
 	[ "$1" == "b" ]
 }
 
 VAR=b
-if other_test "$VAR"; then
-	return_test "$VAR"
-	echo $?
+if is_letter_b "$VAR"; then
+	comment_on_letter "$VAR"
+	echo "RC of comment_on_letter: $?"
 fi
 
-return_test "a"
-echo $?
+comment_on_letter "a"
+echo "RC of comment_on_letter: $?"

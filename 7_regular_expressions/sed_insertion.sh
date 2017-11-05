@@ -3,11 +3,11 @@
 { 
 	echo blub
 	echo blbl
-} | sed '/bl/alaber'
+} | sed '/bl/a11111'
 
 echo ------
 
 { 
 	echo blub
 	echo blbl
-} | sed '/bl/ilaber'
+} | sed '/bl/i11111'

@@ -1,7 +1,6 @@
 #!/bin/bash
 USERARG=0	# bash does not know bolean
-		# convention is to use 0/1
-		# or y/n for this purpose
+		# convention is to use 0/1 or y/n for this purpose
 
 # [ "$1" ] is the same as ! [ -z "$1" ]
 if [ "$1" ]; then

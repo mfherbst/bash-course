@@ -1,8 +1,12 @@
 #!/bin/bash
+# Default logging function
+log() { echo "$@"; }
 
-printer() { echo "1"; }
+if [ "$1" == "--quiet" ]; then
+	# Empty logging function:
+	# Works since ":" is the idle command doing exactly nothing
+	log() { :; }
+fi
 
-for((I=0;I<10;++I)); do
-	printer
-	printer() { echo "$I"; }
-done
+# Log something ... or not
+log Hello and welcome to this script!

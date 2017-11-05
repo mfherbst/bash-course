@@ -1,5 +1,5 @@
 #!/bin/bash
-VAR=$@		# VAR assigned to all arguments
+VAR=$@      # VAR assigned to all arguments
 case $VAR in
    a)   echo "VAR is \"a\""
         ;;  #<- do not omit these
@@ -11,6 +11,8 @@ case $VAR in
         # than pattern l* above
         ;;
    $1)  echo "VAR is \$1"
+        # i.e. there is none or only one arg
+        # because exaclty then $1 == $@
         ;;	
    *)   echo "VAR is something else"
         ;;

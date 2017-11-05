@@ -1,12 +1,12 @@
 #!/bin/bash
 VAR="some super long string"
-PATTERN="s*e"
-PATTERN2="?r"
+SE_PAT="s*e"
+R_PAT="?r"
 REPLACEMENT="FOOOO"
 
 # the longest match is replaced:
-echo ${VAR/$PATTERN/$REPLACEMENT}
-echo ${VAR/$PATTERN2/$REPLACEMENT}
+echo ${VAR/$SE_PAT/$REPLACEMENT}
+echo ${VAR/$R_PAT/$REPLACEMENT}
 
 # all matches are replaced
-echo ${VAR//$PATTERN2/$REPLACEMENT}
+echo ${VAR//$R_PAT/$REPLACEMENT}

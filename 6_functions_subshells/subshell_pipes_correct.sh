@@ -6,4 +6,6 @@ COUNT=$(< resources/testfile grep "e" | {
 	done
 	echo $C
 })
+
+# Do postprocessing on COUNT, e.g. print
 echo "We found $COUNT matches for \"e\"."

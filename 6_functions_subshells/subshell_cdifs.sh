@@ -1,13 +1,11 @@
 #!/bin/bash
-
-#Here want to do some stuff in the PWD
+# Here want to do some stuff in the PWD
 echo "The list of files in the PWD:"
 ls | head -n 4
 (
-	# do stuff in a different directory
+	# Alter the environment:
+	# different working directory and IFS separator
 	cd resources/matrices
-	
-	# and using a different IFS
 	IFS=":"
 
 	echo

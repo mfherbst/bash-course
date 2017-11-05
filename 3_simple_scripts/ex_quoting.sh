@@ -1,16 +1,18 @@
 #!/bin/bash
-# script to extract some information from directories
-# $1: additional keyword to search for
+# Script to extract matching lines from a few project
+# gutenberg books and show the results
+# $1: Keyword to search for
 #
-cd Top Dir
-ADDITIONAL=$(<output grep $1)
-IMPORTANT=$(<output grep -i important)
-cd Lower
-FILE=$(<out1 grep -H $1; <out2 grep -H $2)
-COUNT=$(echo '$FILE' | wc -l)
+cd resources
+ILLIAD=$(<Project Gutenberg selection/The Iliad.txt grep -i $1)
+YELLOW=$(<Project Gutenberg selection/The Yellow Wallpaper.txt grep -i $1)
 
-echo results:
-echo "   important messages:" $IMPORTANT
-echo '   other messages: $ADDITIONAL'
-echo we found $COUNT more findings in
-echo $FILE
+cd Project Gutenberg selection
+OTHERS=$(<Dracula.txt grep -H $1; <The Count of Monte Cristo.txt grep -H $1)
+COUNT=$(echo '$OTHERS' | wc -l)
+
+echo Searching for the keyword $1:
+echo "   Illiad:" $ILLIAD
+echo '   Yellow Wallpaper: $YELLOW'
+echo We found $COUNT more findings in
+echo $OTHERS

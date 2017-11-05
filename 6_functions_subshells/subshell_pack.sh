@@ -1,14 +1,12 @@
 #!/bin/bash
-
-# some input from the main shell
+# Some input state inside the main shell
 N=15
-
 RES=$(
-	# do calculations in the subshell
+	# Do calculations in the subshell
 	SUM=$((N+13))
 	SQUARE=$((N*N))
 
-	# pack the results with a :
+	# Pack the results with a :
 	# i.e. echo them separated by a :
 	echo "$SUM:$SQUARE"
 )
@@ -18,7 +16,6 @@ RES=$(
 SUM=$(echo "$RES" | cut -d: -f1)
 SQUARE=$(echo "$RES" | cut -d: -f2)
 
-
-# echo them:
-echo "$SUM"
-echo "$SQUARE"
+# Echo the results:
+echo "sum: $SUM"
+echo "square: $SQUARE"

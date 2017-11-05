@@ -1,14 +1,10 @@
 #!/bin/bash
-
-C=0 # count to break at some point
-
+C=0
 [() {	# overwrite the [ builtin
-		
-	# use test to end at some point
-	if test $((C++)) -gt 100; then
-		echo "$C"
-		exit 0
-	fi
+	
+	# Increase and print a counter
+	((C++))
+	echo $C
 
 	# this gives an infinite loop:
 	if [ $C -gt 100 ] ; then

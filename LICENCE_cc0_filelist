@@ -33,9 +33,12 @@
 5_variables/arith_logic_ex.sh
 5_variables/arith_operator_ex.sh
 5_variables/arith_replacement.sh
+5_variables/pexp_assign_default.sh
 5_variables/pexp_length.sh
+5_variables/pexp_substr.sh
 5_variables/pexp_subst.sh
-5_variables/pexp_use.sh
+5_variables/pexp_use_alternate.sh
+5_variables/pexp_use_default.sh
 6_functions_subshells/cleanup_notrap.sh
 6_functions_subshells/cleanup_trap.sh
 6_functions_subshells/fun_arguments.sh
@@ -59,6 +62,7 @@
 6_functions_subshells/subshell_example.sh
 6_functions_subshells/subshell_exercise.sh
 6_functions_subshells/subshell_pack.sh
+6_functions_subshells/subshell_pipes_correct2.sh
 6_functions_subshells/subshell_pipes_correct.sh
 6_functions_subshells/subshell_pipes.sh
 7_regular_expressions/grep_only_matching.sh
@@ -95,6 +99,7 @@
 8_awk/ex_duplicate.sh
 8_awk/ex_grep.sh
 8_awk/ex_passwd.sh
+8_awk/less_basic_example.sh
 8_awk/vars_arithlogic.sh
 8_awk/vars_fields_indirect.sh
 8_awk/vars_fields_nf.sh

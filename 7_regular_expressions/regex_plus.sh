@@ -1,3 +1,3 @@
-[[ "woo (rd" =~ wo+ \( ]]; echo $?      #true
-[[ "oo (rd" =~ (wo)+ \( ]]; echo $?     #false
-[[ "wo (rd" =~ (wo)+ \( ]]; echo $?     #true
+[[ "woo (rd" =~ wo+ \( ]]; echo $?      #0=true
+[[ "oo (rd" =~ (wo)+ \( ]]; echo $?     #1=false
+[[ "wo (rd" =~ (wo)+ \( ]]; echo $?     #0=true

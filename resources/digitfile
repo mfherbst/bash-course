@@ -1,4 +1,13 @@
-17 and 4 is 21
-There are 52 weeks in a year.
-1 year also has 365 days.
-Well actually it has 365.25 days according to the  Julian definition.
+A line with only strings
+12
+A line with more string
+123.4
+Blubber di bladi da
+1.759e+15
+-9.3e-5
+A misleading line+5
+
+empty
+19e-5 is not properly formatted either.
+1.5e+5da is a scientific number
+-1.34e+04
