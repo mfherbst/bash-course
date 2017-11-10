@@ -4,7 +4,7 @@ map() {
 
 	# now for all remaining arguments execute
 	# the command with the argument:
-	for val in $@; do
+	for val in "$@"; do
 		$COMMAND $val
 	done
 }
