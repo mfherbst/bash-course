@@ -1,0 +1,43 @@
+# source bash_aliases from home folder
+if [ -f ~/.bash_aliases ]; then
+	. ~/.bash_aliases
+fi
+
+# ls, cd, rm, ... Unix basics
+GREP_OPTIONS='--color=auto'
+alias grep='grep $GREP_OPTIONS'
+alias fgrep='fgrep $GREP_OPTIONS'
+alias egrep='egrep $GREP_OPTIONS'
+alias zgrep='zgrep $GREP_OPTIONS'
+alias bzgrep='bzgrep $GREP_OPTIONS'
+alias xzgrep='xzgrep $GREP_OPTIONS'
+unset GREP_OPTIONS
+
+alias ls='ls -vF --color=auto'
+alias ll='ls -al'
+
+alias mv='mv -i'
+alias cp='cp -i'
+alias rm='rm -I'
+if [ "$USER" == "root" ];then
+	alias rm='rm -i'
+fi
+
+# correct common typos
+alias vmi="vim"
+alias sl='ls'
+
+# cd aliases
+alias cd..='cd ..'
+alias ..='cd ..'
+
+function cl() {
+	cd $1
+	shift
+	ls "$@"
+}
+
+function mkcd() {
+	mkdir "$1"
+	cd "$1"
+}

@@ -1,0 +1,52 @@
+# Separator to use before prompt:
+SEP="$"
+[ "$USER" == "root" ] && SEP="#"
+
+# Use color if terminal has the capability
+if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+	# We have color support; assume it's compliant with Ecma-48
+	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+	# a case would tend to support setf rather than setaf.)
+
+	UCOL="\[\033[0;00m\]"       #white
+	if [ "$USER" == "root" ]; then
+		UCOL="\[\033[0;31m\]"       #red
+	fi
+
+	#HCOL="\[\033[0;36m\]"      #dark cyan
+	HCOL="\[\033[0;33m\]"       #dark yellow
+
+	PCOL="\[\033[1;34m\]"
+	WHITE="\[\033[0;00m\]"
+	PS1="${debian_chroot:+($debian_chroot)}$UCOL\u$WHITE@$HCOL\h$WHITE:$PCOL\W$WHITE$SEP "
+
+	unset UCOL HCOL PCOL WHITE
+else
+	PS1="${debian_chroot:+($debian_chroot)}\u@\h:\W$SEP "
+fi
+unset SEP
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+	xterm*|rxvt*)
+		PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \W\a\]$PS1"
+		;;
+	*)
+		;;
+esac
+
+# Enable color support of ls
+if [ -x /usr/bin/dircolors ]; then
+    eval "`dircolors -b`"
+fi
+
+if [ "$BASH" == "/bin/bash" ]; then
+	# If bash promt the return code if non-zero
+	promt_extra() {
+		local RET=$?
+		if [ "$RET" != "0" ]; then
+			echo -e "rc: \033[0;32m$RET\033[0;00m"
+		fi
+	}
+	PROMPT_COMMAND='promt_extra'
+fi

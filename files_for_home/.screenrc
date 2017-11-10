@@ -1,0 +1,3 @@
+defscrollback 10000
+caption always "%{=rKd}%{+b d}%n %{+b b}%H%{+b d}  %l  %{+b b}%?%E[+]%?%{+b d}%=%?%u @%? %{+b R}%t %{+b d}%c"
+hardstatus alwayslastline "%-Lw%{= Wk}%50>%n*%f %t%{-}%+Lw%<"

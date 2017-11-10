@@ -1,0 +1,22 @@
+# Terminal specific hacks:
+
+# Gnome-terminal & VTE:
+if [ "${VTE_VERSION:-0}" -ge 3405 ] \
+	&& gnome-terminal --version | awk '{split($2,a,"."); if (a[1] >= 3 && a[2] >= 7) exit 0; exit 1}'; then
+	# Workaround for new tab in gnome terminal to open same working direcory
+
+	# sourcing either of the below changes the PROMPT_COMMAND
+	# so we store an original here:
+	PROMPT_ORIG=$PROMPT_COMMAND
+
+	if [ -r /etc/profile.d/vte-2.91.sh ]; then
+		. /etc/profile.d/vte-2.91.sh
+		PROMPT_COMMAND="$PROMPT_ORIG; $PROMPT_COMMAND"
+	elif [ -r /etc/profile.d/vte.sh ]; then
+		. /etc/profile.d/vte.sh
+		PROMPT_COMMAND="$PROMPT_ORIG; $PROMPT_COMMAND"
+	else
+		echo "Could not load vte"
+	fi
+	unset PROMPT_ORIG
+fi

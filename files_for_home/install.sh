@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install new files
-for file in .bashrc .profile; do
+for file in .bashrc .bashrc.d .profile .vimrc .screenrc .toprc; do
 	if [ ! -f "$file" ]; then
 		echo "Please run script directly from the directory using ./$(basename "$0")." >&2
 		exit 1
@@ -14,6 +14,6 @@ for file in .bashrc .profile; do
 	[ -f "$TFILE" ] && mv "$TFILE" "$TFILE.old"
 
 	# copy new file:
-	cp "$file" "$TFILE"
+	cp -a "$file" "$TFILE"
 done
 
