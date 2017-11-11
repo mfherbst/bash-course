@@ -38,4 +38,4 @@ during or after the course.
 ## Citing
 If you use any of the script examples or the course notes,
 please cite my work:
-[![DOI](https://zenodo.org/badge/40785690.svg)](https://zenodo.org/badge/latestdoi/40785690)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1045332.svg)](https://doi.org/10.5281/zenodo.1038525)
