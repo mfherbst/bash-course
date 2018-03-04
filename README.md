@@ -8,6 +8,22 @@ Included files:
 - [LICENCE](LICENCE): Overview how files in this repository are licensed.
 - [resources/](resources/): Data necessary to run the examples and work on the exercises.
 
+## Court order to block access from Project Gutenberg in Germany
+As of 3rd March 2018 access to Project Gutenberg is blocked from Germany
+due to a court order, see the
+[official statement from PGLAF](https://cand.pglaf.org/germany/index.html)
+(the organisation hosting Project Gutenberg) for details.
+This implies as a user with a German IP address you will be unable to use the
+download script mentioned below.
+Unfortunately many of the exercises depend on the books from Project Gutenberg
+and whilst it is possible to do them without the proper book files,
+the results might deviate.
+I am currently unaware of a good alternative to obtain the Project Gutenberg
+books in a simple way and I am unsure about the
+legal status regards hosting them myself.
+In the lack of time on my side the excercises will stay broken for now,
+which I very much regret.
+
 ## Setup
 Before being able to do the Project Gutenberg-related exercises, you should
 run the script ``resources/gutenberg/download.sh`` from the ``resources/gutenberg``
